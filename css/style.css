@@ -157,28 +157,27 @@ p{
     display: flex;
     margin: 10em 0;
     align-items: center;
+    justify-content: space-between
 }
 .feature-sec .second-feature-sec{
 
   flex-direction: row-reverse;
+  justify-content: space-between;
+  
 }
 
 .first-feature-sec .feature,
 .second-feature-sec .second-feature-content{
-    width:60%;
-    float: left;
+    width:500px;
+   
 }
 .second-feature-sec .feature,
 .first-feature-sec .first-feature-content{
-    width: 60%;
-    float: right;
-}
-.second-feature-sec,.first-feature-sec::after{
-    content: '';
-    display: block;
-    clear: both;
+    width: 500px;
 
 }
+
+
 .feature{
     position: relative;
 }
@@ -188,7 +187,7 @@ p{
 .featureimage1{
     
     top: 0;
-    left: 74px;
+    left: 9.7rem;
  
 }
 .featureimage1,.featureimage2{
@@ -197,9 +196,8 @@ p{
     position: absolute;
 }
 .featureimage2{
-
     top: 0;
-    right: 71px;
+    right: 9.7rem;
 }
 .featureimage1 img,
 .featureimage2 img{
@@ -209,7 +207,8 @@ p{
 }
 /* ################## subscribe section #################### */
 .subscribe-sec{
-    width: 90%;
+    max-width: 90%;
+    width: 95%;
     background: #6663e9;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
     margin:  auto;
@@ -394,15 +393,22 @@ p{
         transform: rotate(-53deg);
         background-color: black;
     }
+    /* .hd {
+        font-size: 3rem;
+    } */
     hr{
         width: 100%;
     }
+    .subscribe-sec p {
+        padding: 0 2em;
+    }
+    .subscribe-sec{
+        padding: 1.5em;
+    }
     
 }
-@media (max-width:768px){
-    html{
-        font-size: 50%;
-    }
+@media (max-width:850px){
+
     .main-content{
     width: 90%;
     margin: auto;
@@ -427,21 +433,24 @@ p{
     
     .featureimage1, .featureimage2 {
         position: static;
-        max-width: 92%;
-        max-height: 76%;
+        max-width: 55%;
         margin: auto;
+    }
+    .second-feature-content p, .first-feature-content p{
+        padding:0 10rem;
     }
     .feature .featurefirst{
         display: none;
 
     }
-    .subscribe-sec p {
-        padding: 0 2em;
+    @media (max-width:500px) {
+            html{
+        font-size: 50%;
     }
-    .subscribe-sec{
-        max-width: 90%;
-        width: 95%;
-        padding: 1.5em;
+        
     }
+    
 
 }
+
+    
