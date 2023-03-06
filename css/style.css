@@ -408,6 +408,9 @@ p{
     
 }
 @media (max-width:850px){
+    html{
+        font-size: 50%;
+    }
 
     .main-content{
     width: 90%;
@@ -433,7 +436,7 @@ p{
     
     .featureimage1, .featureimage2 {
         position: static;
-        max-width: 55%;
+        width: 90%;
         margin: auto;
     }
     .second-feature-content p, .first-feature-content p{
@@ -443,14 +446,9 @@ p{
         display: none;
 
     }
-    @media (max-width:500px) {
-            html{
-        font-size: 50%;
-    }
-        
-    }
+    
     
 
 }
 
-    
+
