@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f6f8fa;
+    font-family: 'Poppins', sans-serif;
+}
+body>*{
+    padding: 1em;
+}
+
+/* #################### Navigation bar ################## */
+.nav-bar{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/mainBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.nav-sec input[type=checkbox],
+.nav-sec .ham-lines{
+    display: none;
+}
+.nav-sec li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 2em;
+}
+.nav-sec a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+}
+hr{
+    height: 3px;
+    width: 80%;
+    margin: auto;
+    background: white;
+}
+/* ############## common classes ################## */
+.hd{
+    font-size: 5rem;
+    font-weight: 700;
+}
+p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.md{
+    font-size: 2.5rem;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1em 1em;
+    font-weight: 600;
+    border-radius: 29px;
+    width: 50%;
+    margin: 1em 0;
+
+}
+.btn-primary{
+    background: #6663e9;
+    color: white;
+
+}
+.estate-img{
+    width: 250px;
+    height: 250px;
+    border-radius:10px ;
+}
+
+/* ########### Main sec ############# */
+.main{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/mainBackground.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.main-content{
+    padding:5em;
+   width: 60%;
+    margin: 0 10em;
+    color: white;
+}
+.main-content>*{
+    margin: 0.8em 0;
+}
+/* ########### Estate section ##############*/
+.estate-sec{
+    width: 65%;
+    margin: auto;
+ 
+}
+.estate-sec .hd{
+    padding: 1.5em 0;
+    text-align: center;
+}
+.estates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap:5rem;
+
+}
+
+
+.top{
+    position: relative;
+    bottom: 25px;
+}
+.bottom{
+    position: relative;
+    top: 25px;
+}
+.des{
+    background: #ffffff;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 0 20px;
+    align-items: center;
+}
+.des a{
+    width: 100%;
+}
+
+
+/* ################ feature section ############## */
+.feature-sec .first-feature-sec,
+.feature-sec .second-feature-sec{
+    display: flex;
+    margin: 10em 0;
+    align-items: center;
+}
+.feature-sec .second-feature-sec{
+
+  flex-direction: row-reverse;
+}
+
+.first-feature-sec .feature,
+.second-feature-sec .second-feature-content{
+    width:60%;
+    float: left;
+}
+.second-feature-sec .feature,
+.first-feature-sec .first-feature-content{
+    width: 60%;
+    float: right;
+}
+.second-feature-sec,.first-feature-sec::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+.feature{
+    position: relative;
+}
+.feature img{
+    width: 100%;
+}
+.featureimage1{
+    
+    top: 0;
+    left: 74px;
+ 
+}
+.featureimage1,.featureimage2{
+    width:72%;
+    height: 76%;
+    position: absolute;
+}
+.featureimage2{
+
+    top: 0;
+    right: 71px;
+}
+.featureimage1 img,
+.featureimage2 img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+}
+/* ################## subscribe section #################### */
+.subscribe-sec{
+    width: 90%;
+    background: #6663e9;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+    margin:  auto;
+    border-radius: 7rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em;
+  
+}
+
+.subscribe-sec>*{
+    margin-bottom: 0.8em;
+}
+.subscribe-sec p{
+    padding: 0 6em;
+}
+.subscribe-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.subscribe-btn input{
+   text-align: left;
+   padding: 0 2em;
+   border: transparent;
+    background: #5654d1;
+}
+::placeholder{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.subscribe-btn>*{
+    padding: 10px;
+}
+.subscribe-btn a{
+    background: #ffffff;
+    color: #5654d1;
+    width: 30%;
+    font-size: 2em;
+    border-radius:7rem ;
+
+}
+
+
+/* ################ footer ##################### */
+.container{
+   width: 75%;
+    margin: 2em auto;
+
+}
+.footer-sec{
+    display: flex;
+    padding: 2em 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10rem 2rem;
+    
+}
+.social-handles{
+    display: flex;
+    gap: 20px;
+}
+.logo-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap:20px;
+}
+.loc-sub{
+    margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column; 
+ align-items: center;
+  row-gap:20px ;
+  
+}
+.loc-sub a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+.loc-sub a:hover{
+    text-decoration:underline;
+}
+
+
+/* ################# Media queries #################### */
+@media (max-width:900px) {
+    /* ######### hambergur menu ######### */
+    
+    .nav-sec input[type=checkbox],
+    .nav-sec .ham-lines{
+        display: block;
+    }
+    .nav-sec{
+        position: relative;
+    }
+    .nav-sec input[type=checkbox],
+    .nav-sec .ham-lines{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 60px;
+        height: 70px
+    }
+    .nav-sec input[type=checkbox]{
+        opacity:0 ;
+        z-index: 3;
+    }
+    .nav-sec .ham-lines{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 2;
+
+    }
+    .nav-sec .ham-lines .lines{
+        background-color: white;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+    }
+    .nav-sec{
+        display:block;   
+    }
+    .nav-bar{
+        position: relative;
+    }
+    .nav-items{
+       
+        position: absolute;
+        top: -11px;
+        left: -12px;
+        height: 100vh;
+        max-width: 300px;
+        opacity: 0.85;
+        z-index: 1;
+        background:white;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        padding: 145px 3px 0 18px;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+       
+    }
+    .nav-sec input[type=checkbox]:checked~.nav-items{
+        transform: translateX(0);
+    }
+    .nav-sec .logo{
+        float: right;
+        margin: 1.5em;
+    }
+    .nav-items li{
+        display: block;
+        margin-bottom: 5rem;
+        font-size: 1.5em;
+    }
+    .nav-items a{
+        color:black;
+    }
+  
+    .nav-sec .ham-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .nav-sec .ham-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    .nav-sec .ham-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .nav-sec input[type="checkbox"]:checked ~ .ham-lines .line1{
+        transform: rotate(50deg);
+        background-color: black;
+    }
+    .nav-sec input[type="checkbox"]:checked ~ .ham-lines .line2{
+        transform: scaley(0);
+        background-color: black;
+    }
+    .nav-sec input[type="checkbox"]:checked ~ .ham-lines .line3{
+        transform: rotate(-53deg);
+        background-color: black;
+    }
+    hr{
+        width: 100%;
+    }
+    
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .main-content{
+    width: 90%;
+    margin: auto;
+    }
+
+    .feature-sec .second-feature-sec,
+    .first-feature-sec {
+        flex-direction: column;
+    }
+    .second-feature-sec .feature, .first-feature-sec .first-feature-content,
+    .first-feature-sec .feature, .second-feature-sec .second-feature-content {
+        width: 90%;
+        float: none;
+        margin: 1em auto;
+    }
+    .second-feature-sec .second-feature-content, .first-feature-sec .first-feature-content{
+        text-align: center;
+    }
+    .second-feature-sec .second-feature-content a, .first-feature-sec .first-feature-content a{
+        margin:1em auto;
+    }
+    
+    .featureimage1, .featureimage2 {
+        position: static;
+        max-width: 92%;
+        max-height: 76%;
+        margin: auto;
+    }
+    .feature .featurefirst{
+        display: none;
+
+    }
+    .subscribe-sec p {
+        padding: 0 2em;
+    }
+    .subscribe-sec{
+        max-width: 90%;
+        width: 95%;
+        padding: 1.5em;
+    }
+
+}
